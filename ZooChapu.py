@@ -3,6 +3,12 @@ list = []
 class Animal:
 	def __init__(self):
 		#Aqui irán los inputs
+		cont =int(input("¿Cuántos animales entran?: "))
+		for x in range (0,cont):
+			self.name=input("¿Cuál es el nombre del animal?: ")
+			list.append(self.name)
+			self.tipo = input("¿Qué tipo de animal es?")
+			print ("El animal "+self.name+" ha ingresado")
+		print(list[:])
 	def NewType(self):
 		#Se registrará los nuevos tipos
-	
