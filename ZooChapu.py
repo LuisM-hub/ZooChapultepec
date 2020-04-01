@@ -7,8 +7,9 @@ class Animal:
 		for x in range (0,cont):
 			self.name=input("¿Cuál es el nombre del animal?: ")
 			list.append(self.name)
-			self.tipo = input("¿Qué tipo de animal es?")
+			self.tipo = input("¿Qué tipo de animal es?: ")
 			print ("El animal "+self.name+" ha ingresado")
-		print(list[:])
+		print("La lista actual de animales es: " + list[:])
 	def NewType(self):
 		#Se registrará los nuevos tipos
+new_animal = Animal()
