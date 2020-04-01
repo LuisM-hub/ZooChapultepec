@@ -12,19 +12,18 @@ class Animal:
 			list_type.append(self.type)	
 			print ("El animal "+self.name+" ha ingresado y es del tipo: "+self.type)
 		print("La lista actual de animales es: " + lista[:])
-		validar = true
-		while validar:
+		while True:
 			id = int(input("Para cambiar el tipo de animal, escoge a un animal de la lista: "))
 			if(id==0):
 				print ("La lista empieza del 1 a n")
 				print ("")
 			else:
-				id--
+				i--id
 				elegido = lista[id]
 				elegido_t= list_type[id]
 				print("El nombre del animal elegido es: "+ elegido + " y es del tipo: " + elegido_t)
 				self.NewType(id)
-				validar=false
+				break
 
 	def NewType(id):
 		#Se registrará los nuevos tipos
