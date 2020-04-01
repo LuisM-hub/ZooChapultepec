@@ -22,10 +22,9 @@ class Animal:
 				id--
 				elegido = lista[id]
 				elegido_t= list_type[id]
-				print("El nombre del animal elegido es: "+ dato + " y es del tipo: " + elegido_t)
+				print("El nombre del animal elegido es: "+ elegido + " y es del tipo: " + elegido_t)
 				self.NewType(id)
 				validar=false
-		pass
 
 	def NewType(id):
 		#Se registrará los nuevos tipos
